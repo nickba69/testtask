@@ -1,0 +1,213 @@
+@font-face{
+  font-family: "Futura";
+  src: url('fonts/FuturaLT-Light_0.ttf') format('truetype');
+}
+$main-font : 'Futura', sans-serif ;
+$secondary-font : "Arial";
+*{
+  font-family: $main-font;
+  transition: 0.3s !important;
+}
+.book-appointment{
+  position: relative;
+
+  img{
+    max-width: 300%;
+    position: absolute;
+    top: 19px;
+    left: -56px;
+  }
+}
+header{
+  .main-navigation{
+    padding-top: 32px;
+    padding-bottom: 25px;
+  }
+
+  /*If is homepage*/
+  .home-banner img{
+    text-align: center;
+    margin-top: 41px;
+    margin-left: 142px;
+  }
+  .banner img{
+    height: 351px;
+    width: auto;
+    margin-right: -12px;
+  }
+
+  .home-banner{
+    height: 677px;
+    background: url('../images/banner-big.png');
+    background-size: cover;
+  }
+  .banner{
+    height: 385px;
+    background: url('../images/banner-little.png');
+    background-size: cover;
+  }
+  .main-navigation a{
+    margin-right: 2.777em;
+    color: #878484;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.05px;
+  }
+}/* End Header*/
+
+#main-content{
+
+  h1{
+    margin-top: 125px;
+    text-align: center;
+    color: #000000;
+    font-family: $main-font;
+    font-size: 41px;
+    letter-spacing: 0.47px;
+  }
+  p{
+    margin-top: 67px;
+    margin-bottom: 88px;
+    color: #4d4f50;
+    font-family: $main-font;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 35.05px;
+  }
+  img{
+    margin-bottom: 6px;
+    border: 1px solid black;
+    padding: 44px;
+    margin-right: -30px;
+    max-height: 1205px;
+  }
+}
+/*End main content*/
+
+.author-info{
+
+  .avatar{
+    margin-top: -2px;
+    margin-bottom: 70px;
+    display: inline-block;
+    padding: 43px;
+    border: 1px solid black;
+  }
+  div{
+    margin-bottom: 37px;
+
+    span{
+      display: block;
+      color: #4d4f50;
+      font-family: $main-font;
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 31px;
+    }
+  }
+}
+/* End author info*/
+
+.portfolio{
+  .portfolio-item{
+
+    img{
+      max-width: 19%;
+    }
+  }
+}
+
+footer{
+  text-align: center;
+  margin-top: 22px;
+  padding-top: 63px;
+  padding-bottom: 50px;
+  background: #282828;
+  color: white;
+
+
+  .footer-column-title{
+    font-family: $main-font;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+  }
+  .footer-column-subtitle{
+    margin-top: 49px;
+    margin-bottom: 58px;
+    font-family: $main-font;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 25.15px;
+  }
+  input{
+    width: 377px;
+    height: 44px;
+  }
+  .footer-social-icon{
+    top: -14px;
+    display: inline-block;
+    position: relative;
+    margin-right: 7px;
+  }
+
+}
+/* End portfolio*/
+
+.popuper{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.77);
+  z-index: 10;
+
+  .portfolio-full-image{
+    max-width: 40%;
+    max-height: 80%;
+    margin: 12% auto 5% auto;
+    display: block;
+    border: 8px solid white;
+  }
+  .pop-close-btn{
+    background: none;
+    font-size: 25px;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    outline: none;
+
+    :hover{
+      cursor: pointer;
+    }
+  }
+
+}
+.review-logo-description {
+  display: block;
+  width: 400px;
+  font-size: 25px;
+  color: white;
+  margin: 150px auto; 
+
+}
+
+
+
+/*Media Queries*/
+@media (min-width: 1700px) {
+  .container {
+    max-width: 1712px !important;
+  }
+}
+@media (min-width: 1000px){
+  .width-980 {
+    max-width: 980px !important;
+  }
+}
